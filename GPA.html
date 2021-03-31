@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='GPA1.css'>
+    <script src='main.js'></script>
+</head>
+<center>
+<body id="mm">
+
+<table style="width:50%">
+    <tr><th colspan="5" id="hh1">GPA CALCULATOR</th></tr>
+    <tr><th colspan="5" id="pelumi"></th></tr>
+    <tr>
+      <th>COURSE</th>
+      <th>SCORE</th> 
+      <th>GRADE</th>
+      <th>UNITS</th>
+      <th>POINTS</th>
+    </tr>
+    <tr>
+      <td><input id="aa" type="text"></input></td>
+      <td><input id="bb" type="number"></input></td> 
+      <td><input id="cc" type="text" ></input></td>
+      <td><input id="dd" type="number"></input></td>
+      <td><input id="ee" type="text"></input></td>
+    </tr>
+    
+    <tr>
+        <td><input id="ff" type="text"></input></td>
+        <td><input id="gg" type="number"></input></td> 
+        <td><input id="hh" type="text"></input></td>
+        <td><input id="ii" type="number"></input></td>
+        <td><input id="jj" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="kk" type="text"></input></td> 
+        <td><input id="lla" type="number"></input></td>
+        <td><input id="mma" type="text"></input></td>
+        <td><input id="nn" type="number"></input></td>
+        <td><input id="oo" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="pp" type="text"></input></td>
+        <td><input id="qq" type="number"></input></td> 
+        <td><input id="rr" type="text"></input></td>
+        <td><input id="ss" type="number"></input></td>
+        <td><input id="tt" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="uu" type="text"></input></td>
+        <td><input id="vv" type="number"></input></td> 
+        <td><input id="ww" type="text"></input></td>
+        <td><input id="xx" type="number"></input></td>
+        <td><input id="yy" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="zz" type="text"></input></td>
+        <td><input id="ab" type="number"></input></td> 
+        <td><input id="ac" type="text"></input></td>
+        <td><input id="ad" type="number"></input></td>
+        <td><input id="ae" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="af" type="text"></input></td>
+        <td><input id="ag" type="number"></input></td> 
+        <td><input id="ah" type="text"></input></td>
+        <td><input id="ai" type="number"></input></td>
+        <td><input id="aj" type="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="ak" type="text"></input></td>
+        <td><input id="al" type="number"></input></td> 
+        <td><input id="am" type="text"></input></td>
+        <td><input id="ann" type="number"></input></td>
+        <td><input id="aoo" id="text"></input></td>
+      </tr>
+      
+    <tr>
+        <td><input id="ap" type="text"></input></td>
+        <td><input id="aq" type="number"></input></td> 
+        <td><input id="ar" type="text"></input></td>
+        <td><input id="as" type="number"></input></td>
+        <td><input id="at" type="text"></input></td>
+      </tr>
+       
+    <tr>
+      <td><input id="daa" type="text"></input></td>
+      <td><input id="dbb" type="number"></input></td> 
+      <td><input id="dcc" type="text"></input></td>
+      <td><input id="ded" type="number"></input></td>
+      <td><input id="dff" type="text"></input></td>
+    </tr>
+     
+    <tr>
+      <td><input id="caa" type="text"></input></td>
+      <td><input id="cbb" type="number"></input></td> 
+      <td><input id="ccx" type="text"></input></td>
+      <td><input id="cdd" type="number"></input></td>
+      <td><input id="cee" type="text"></input></td>
+    </tr>
+     
+    <tr>
+      <td><input id="cfx" type="text"></input></td>
+      <td><input id="cgg" type="number"></input></td> 
+      <td><input id="chh" type="text"></input></td>
+      <td><input id="cii" type="number"></input></td>
+      <td><input id="ckk" type="text"></input></td>
+    </tr>
+     
+    <tr>
+      <td><input id="cll" type="text"></input></td>
+      <td><input id="cmm" type="number"></input></td> 
+      <td><input id="cnn" type="text"></input></td>
+      <td><input id="coo" type="number"></input></td>
+      <td><input id="cpp" type="text"></input></td>
+    </tr>
+     
+    <tr>
+      <td><input id="cqq" type="text"></input></td>
+      <td><input id="crr" type="number"></input></td> 
+      <td><input id="css" type="text"></input></td>
+      <td><input id="ctt" type="number"></input></td>
+      <td><input id="cuu" type="text"></input></td>
+    </tr>
+     
+   </table>
+   <div id="feranmi">
+  <button>GPA</button><input type="text" id="bigdada"></input> </div>
+ <button onclick="result()" id="mom">SUBMIT</button>
+
+<script>
+  var date =new Date()
+    document.getElementById("pelumi").innerHTML= Date()
+  
+function result(){
+
+
+    var score= document.getElementById("bb").value;
+    var units= document.getElementById("dd").value;
+var x =units
+    if (score >69){
+        PA=units*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+
+    if (score >69){
+        T="A"
+    }
+  
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+if (x==='' || score==='') { document.getElementById("cc").value='';
+document.getElementById("ee").value='';
+    
+} else {
+    
+document.getElementById("cc").value= (T)
+document.getElementById("ee").value= (PA)
+
+}
+  
+  
+var score= document.getElementById("gg").value;
+var units= document.getElementById("ii").value;
+var x =units
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+
+if (score >69){
+    T="A"
+}
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+if (x==='' || score==='') { document.getElementById("hh").value='';
+document.getElementById("jj").value='';
+    
+} else {
+    
+ document.getElementById("hh").value= (T) ;
+document.getElementById("jj").value= (PA);
+
+}
+var score= document.getElementById("lla").value;
+var units= document.getElementById("nn").value;
+var x = units;
+
+if (score >69){
+        PA=units*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("mma").value='';
+document.getElementById("oo").value='';
+    
+} else {
+
+    document.getElementById("mma").value= (T);
+document.getElementById("oo").value= (PA);
+
+}
+
+var score= document.getElementById("qq").value;
+var units= document.getElementById("ss").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+ 
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+if (x==='' || score==='') { document.getElementById("tt").value='';
+document.getElementById("rr").value='';
+    
+} else {
+    document.getElementById("tt").value= (PA)
+document.getElementById("rr").value= (T)
+
+}
+
+var score= document.getElementById("vv").value;
+var units= document.getElementById("xx").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("ww").value='';
+document.getElementById("yy").value='';
+    
+} else {
+    
+document.getElementById("ww").value= (T)
+document.getElementById("yy").value= (PA)
+}
+
+var score= document.getElementById("ab").value;
+var units= document.getElementById("ad").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("ac").value='';
+document.getElementById("ae").value='';
+    
+} else {
+    
+document.getElementById("ac").value= (T)
+document.getElementById("ae").value= (PA)
+
+}
+
+var score= document.getElementById("ag").value;
+var units= document.getElementById("ai").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*1}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+if (x==='' || score==='') { document.getElementById("ah").value='';
+document.getElementById("aj").value='';
+    
+} else {
+    
+document.getElementById("ah").value= (T)
+document.getElementById("aj").value= (PA)
+}
+
+var score= document.getElementById("al").value;
+var units= document.getElementById("ann").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("am").value='';
+document.getElementById("aoo").value='';
+    
+} else {
+    
+document.getElementById("am").value= (T);
+document.getElementById("aoo").value= (PA);
+}
+
+
+var score= document.getElementById("aq").value;
+var units= document.getElementById("as").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("ar").value='';
+document.getElementById("at").value='';
+    
+} else {
+  
+document.getElementById("ar").value= (T);
+document.getElementById("at").value= (PA);
+
+}
+
+
+var score= document.getElementById("dbb").value;
+var units= document.getElementById("ded").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("dcc").value='';
+document.getElementById("dff").value='';
+    
+} else {
+  
+document.getElementById("dcc").value= (T)
+document.getElementById("dff").value= (PA)
+}
+
+var score= document.getElementById("cbb").value;
+var units= document.getElementById("cdd").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("ccx").value='';
+document.getElementById("cee").value='';
+    
+} else {
+
+    document.getElementById("ccx").value= (T);
+document.getElementById("cee").value= (PA);  
+}
+
+var score= document.getElementById("cgg").value;
+var units= document.getElementById("cii").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("chh").value='';
+document.getElementById("ckk").value='';
+    
+} else {
+ 
+document.getElementById("chh").value= (T);
+document.getElementById("ckk").value= (PA);
+}
+
+var score= document.getElementById("cmm").value;
+var units= document.getElementById("coo").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+if (x==='' || score==='') { document.getElementById("cnn").value='';
+document.getElementById("cpp").value='';
+    
+} else {
+ 
+document.getElementById("cnn").value= (T);
+document.getElementById("cpp").value= (PA);
+
+}
+
+
+var score= document.getElementById("crr").value;
+var units= document.getElementById("ctt").value;
+var x = units;
+
+if (score >69){
+        PA=x*5
+    }
+    else if (score >59){PA=x*3}
+    else if (score >49){PA=x*2}
+    
+else if (score >44){PA=x*1}
+
+else if (score >39){PA=x*1}
+
+else if (score >0){PA=x*0}
+if (score >69){
+    T="A"
+}
+
+else if (score >59){T="B"} 
+
+else if (score >49){ T="C"}
+
+else if (score >44){T="D"}
+
+else if (score >39){T="E"}
+
+else if (score >0){T="F"}
+
+
+if (x==='' || score==='') { document.getElementById("css").value='';
+document.getElementById("cuu").value='';
+    
+} else {
+document.getElementById("css").value= (T);
+document.getElementById("cuu").value= (PA);
+}
+
+var a11 =document.getElementById("dd").value;
+if (a11==='') {
+    a11=0
+} else {
+    a11 =document.getElementById("dd").value;
+
+}
+var a12 = document.getElementById("ii").value;
+if (a12==='') {
+    a12=0;
+} else {
+    a12 = document.getElementById("ii").value;
+}
+var a13 =document.getElementById("nn").value;
+if (a13==='') {
+    a13=0;
+} else {
+    a13 =document.getElementById("nn").value;
+}
+var a14 =document.getElementById("ss").value;
+if (a14==='') {
+    a14=0;
+} else {
+    a14 =document.getElementById("ss").value;
+}
+var a15 =document.getElementById("xx").value;
+if (a15==='') {
+    a15=0
+} else {
+    a15 =document.getElementById("xx").value;
+}
+
+var a16= document.getElementById("ad").value;
+if (a16==='') {
+    a16=0
+} else {
+    a16= document.getElementById("ad").value;
+}
+
+var a17= document.getElementById("ai").value;
+if (a17==='') {
+    a17=0
+} else {
+    a17= document.getElementById("ai").value;
+}
+var a18= document.getElementById("ann").value;
+if (a18==='') {
+    a18=0
+} else {
+    a18= document.getElementById("ann").value;
+}
+var a19 = document.getElementById("as").value;
+if (a19==='') {
+    a19=0;
+} else {
+    a19 = document.getElementById("as").value;
+}
+var a20= document.getElementById("ded").value;
+if (a20==='') {
+    a20=0;
+} else {
+    a20= document.getElementById("ded").value;
+}
+var a21= document.getElementById("cdd").value;
+if (a21==='') {
+    a21=0
+} else {
+    a21= document.getElementById("cdd").value;
+}
+
+var a224= document.getElementById("cii").value;
+if (a224==='') {
+    a224=0
+} else {
+    a224=document.getElementById("cii").value;  
+}
+var a23=document.getElementById("coo").value;
+if (a23==='') {
+    a23=0
+} else {
+    a23=document.getElementById("coo").value;
+}
+var a24=document.getElementById("ctt").value;
+if (a24==='') {
+    a24=0
+} else {
+    a24=document.getElementById("ctt").value;
+
+}
+var pelt =(parseInt(a11)+parseInt(a12)+parseInt(a13)
++parseInt(a14)+parseInt(a15)+parseInt(a16)+ parseInt(a17)+ parseInt(a18)+parseInt(a19)
++parseInt(a20)+parseInt(a21)+parseInt(a224)+parseInt(a23)+parseInt(a24)
+)
+
+var b11=document.getElementById("ee").value;
+if (b11==='') {
+    b11=0
+} else {
+    b11=document.getElementById("ee").value;
+}
+var b12=document.getElementById("jj").value;
+if (b12==='') {
+    b12=0
+} else {
+    b12=document.getElementById("jj").value;
+}
+var b13=document.getElementById("oo").value;
+if (b13==='') {
+    b13=0
+} else {
+    b13=document.getElementById("oo").value;
+}
+var b14=document.getElementById("tt").value;
+if (b14==='') {
+    b14=0
+} else {
+    b14=document.getElementById("tt").value;  
+}
+var b15=document.getElementById("yy").value;
+if (b15==='') {
+    b15=0
+} else {
+    b15=document.getElementById("yy").value;
+}
+var b16=document.getElementById("ae").value;
+if (b16==='') {
+    b16=0
+} else {
+    b16=document.getElementById("ae").value;
+}
+var b17=document.getElementById("aj").value;
+if (b17==='') {
+    b17=0
+} else {
+    b17=document.getElementById("aj").value;
+}
+var b18=document.getElementById("aoo").value;
+if (b18==='') {
+    b18=0
+} else {
+    b18=document.getElementById("aoo").value;
+}
+var b19=document.getElementById("at").value;
+if (b19==='') {
+    b19=0
+} else {
+    b19=document.getElementById("at").value;
+}
+var b20=document.getElementById("dff").value;
+if (b20==='') {
+    b20=0
+} else {
+    b20=document.getElementById("dff").value;
+}
+var b21 =document.getElementById("cee").value;
+if (b21==='') {
+    b21=0;
+} else {
+    b21 =document.getElementById("cee").value;
+}
+var b22= document.getElementById("ckk").value;
+if (b22==='') {
+    b22=0
+} else {
+    b22= document.getElementById("ckk").value;
+}
+var b23= document.getElementById("cpp").value;
+if (b23==='') {
+    b23=0;
+} else {
+b23=document.getElementById("cpp").value;
+}
+var b24=document.getElementById("cuu").value;
+if (b24==='') {
+    b24=0;
+} else {
+    b24=document.getElementById("cuu").value; 
+}
+var yettyp =(parseInt(b11)+parseInt(b12)
++parseInt(b13)+parseInt(b14)+parseInt(b15)+parseInt(b16)+parseInt(b17)
++parseInt(b18)+parseInt(b19)+parseInt(b20)+parseInt(b21)+parseInt(b21)
++parseInt(b22)+parseInt(b23)+parseInt(b24)
+)
+
+document.getElementById("bigdada").value= yettyp/pelt
+
+
+}
+
+</script>
+
+</body>
+</center>
+</html> 
